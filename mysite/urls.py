@@ -1,23 +1,78 @@
-"""mysite URL Configuration
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/2.2/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from myweb import views
 
 urlpatterns = [
-    path('',views.index),
+    #path('', include('myweb.urls')),
+    path('', views.index, name='/index'),
+    path('index2/', views.index2, name='/index2'),
+    path('login/', views.login_active, name='/login'),
+    path('logout/',views.logout, name='/logout'),
+    path('commady/',views.commady, name='/commady'),
+    path('gintama/',views.gintama, name='/gintama'),
+     path('gintama1/',views.gintama1, name='/gintama1'),
+    path('gintama2/',views.gintama2, name='/gintama2'),
+    path('gintama3/',views.gintama3, name='/gintama3'),
+    path('action/',views.action, name='/action'),
+    path('adventure/',views.adventure, name='/adventure'),
+    path('beelzebub/',views.beelzebub, name='/beelzebub'),
+    path('beelzebub1/',views.beelzebub, name='/beelzebub1'),
+    path('beelzebub2/',views.beelzebub2, name='/beelzebub2'),
+    path('beelzebub3/',views.beelzebub3, name='/beelzebub3'),
+    path('Danshi/',views.Danshi, name='/Danshi'),
+    path('Danshi1/',views.Danshi1, name='/Danshi1'),
+    path('Danshi2/',views.Danshi2, name='/Danshi2'),
+    path('Danshi3/',views.Danshi3, name='/Danshi3'),
+    path('day/',views.day, name='/day'),
+    path('day1/',views.day1, name='/day1'),
+    path('day2/',views.day2, name='/day2'),
+    path('day3/',views.day3, name='/day3'),
+    path('doc/',views.doc, name='/doc'),
+    path('doc1/',views.doc1, name='/doc1'),
+    path('doc2/',views.doc2, name='/doc2'),
+    path('doc3/',views.doc3, name='/doc3'),
+    path('doremon/',views.doremon, name='/doremon'),
+    path('doremon1/',views.doremon1, name='/doremon1'),
+    path('doremon2/',views.doremon2, name='/doremon2'),
+    path('doremon3/',views.doremon3, name='/doremon3'),
+    path('fantasy/',views.fantasy, name='/fantasy'),
+    path('fate/',views.fate, name='/fate'),
+    path('fate1/',views.fate1, name='/fate1'),
+    path('fate2/',views.fate2, name='/fate2'),
+    path('fate3/',views.fate3, name='/fate3'),
+    path('ghoul/',views.ghoul, name='/ghoul'),
+    path('ghoul1/',views.ghoul1, name='/ghoul1'),
+    path('ghoul2/',views.ghoul2, name='/ghoul2'),
+    path('ghoul3/',views.ghoul3, name='/ghoul3'),
+    path('log/',views.log, name='/log'),
+    path('log1/',views.log1, name='/log1'),
+    path('log2/',views.log2, name='/log2'),
+    path('log3/',views.log3, name='/log3'),
+    path('oneman/',views.oneman, name='/oneman'),
+    path('oneman1/',views.oneman1, name='/oneman1'),
+    path('oneman2/',views.oneman2, name='/oneman2'),
+    path('oneman3/',views.oneman3, name='/oneman3'),
+    path('onepiecestampede/',views.onepiecestampede, name='/onepiecestampede'),
+    path('onepiecestampede1/',views.onepiecestampede1, name='/onepiecestampede1'),
+    path('onepiecestampede2/',views.onepiecestampede2, name='/onepiecestampede2'),
+    path('onepiecestampede3/',views.onepiecestampede3, name='/onepiecestampede3'),
+    path('sket/',views.sket, name='/sket'),
+    path('sket1/',views.sket1, name='/sket1'),
+    path('sket2/',views.sket2, name='/sket2'),
+    path('sket3/',views.sket3, name='/sket3'),
+    path('slime/',views.slime, name='/slime'),
+    path('slime1/',views.slime1, name='/slime1'),
+    path('slime2/',views.slime2, name='/slime2'),
+    path('slime3/',views.slime3, name='/slime3'),
+    path('themovie/',views.themovie, name='/themovie'),
+    path('yaiba/',views.yaiba, name='/yaiba'),
+    path('yaiba1/',views.yaiba1, name='/yaiba1'),
+    path('yaiba2/',views.yaiba2, name='/yaiba2'),
+    path('yaiba3/',views.yaiba3, name='/yaiba3'),
+    path('yourname/',views.yourname, name='/yourname'),
+    path('yourname1/',views.yourname1, name='/yourname1'),
+    path('yourname2/',views.yourname2, name='/yourname2'),
+    path('yourname3/',views.yourname3, name='/yourname3'),
     path('admin/', admin.site.urls),
+
 ]
